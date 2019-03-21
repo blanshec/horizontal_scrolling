@@ -1,36 +1,72 @@
 .page{
-    background-color: fuchsia;
+    margin: 0 auto;
+    box-sizing: border-box;
+
     min-width: 1100px;
-    margin: 0 0 auto;
+    max-width: 1600px;
+    overflow: hidden;
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
 }
 
-.menu {
+.menu_list {
+    list-style-type: none;
+    margin: 0;
+
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+}
+
+.menu__link {
     text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
 }
 
-.header{
-    height: 100vh;
+.content {
+    scroll-snap-type: x mandatory;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    overflow-x: scroll;
 }
-.header__title{
-    color: white;
-    line-height: 30px;
-    font-size: 70px;
-    font-weight: bold;
+.section {
+    height: 790px;
+    min-width: 100vw;
+    scroll-snap-align: center;
+    text-align: center;
 }
 
-.header__subtitle{
-    color: white;
-    line-height: 30px;
-    font-size: 50px;
-    font-weight: bold;
+.header {
+    background-image: url(/images/daniel-gerhard-z-taverna10mb.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.bartender {
-    height: 100vh;
+.page-bartender {
+    background-image: url(/images/Tavern-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.page-tables {
+    background-image: url(/images/77311b61fcafa9d9730f3a9a8173390d.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.page-club {
+    background-image: url(/images/24feb18.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.page-backdoor {
+    background-image: url(/images/concept-4-tavern.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    background-color: #262626;
 }
